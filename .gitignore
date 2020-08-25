@@ -37,3 +37,4 @@ msbuild.wrn
 .vs/
 
 Features/*.cs
+TestResults/
