@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestProfile xmlns="http://www.specflow.org/schemas/plus/TestProfile/1.5">
+	<Settings projectName="HotelBookingTests" />
+	<Execution stopAfterFailures="3" testThreadCount="1" testSchedulingMode="Sequential" />
+	<Report>
+		<Template name="..\..\..\Templates\CucumberJson.cshtml" outputName="Report.json"/>
+	</Report>
+	<TestAssemblyPaths>
+		<TestAssemblyPath>HotelBookingTests.dll</TestAssemblyPath>
+	</TestAssemblyPaths>
+</TestProfile>
