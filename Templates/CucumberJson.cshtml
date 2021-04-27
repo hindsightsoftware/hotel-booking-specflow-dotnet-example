@@ -25,7 +25,7 @@
                         select new
                         {
                             description = "",
-                            id = "",
+                            id = f.Title.Replace(" ", "-").ToLower() + ";" + scenario.Title.Replace(" ", "-").ToLower(),
                             keyword = "Scenario",
                             line = scenario.Source.SourceLine + 1,
                             name = scenario.Title,
@@ -55,7 +55,7 @@
                                     },
                             type = "scenario"
                         }).ToList(),
-            id = "",
+            id = f.Title.Replace(" ", "-").ToLower(),
             keyword = "Feature",
             line = f.Source.SourceLine + 1,
             tags = f.Tags.Select(t => new { name = t, line = 1 }),
